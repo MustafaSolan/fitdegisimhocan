@@ -13,7 +13,7 @@ export default {
 
             return response;
         } catch (e) {
-            return new Response('Internal Error', { status: 500 });
+            return new Response(`Internal Error: ${e.message}\n${e.stack}`, { status: 500 });
         }
     }
 };
