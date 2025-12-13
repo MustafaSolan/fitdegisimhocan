@@ -1,0 +1,149 @@
+#️⃣ 1. Project Overview
+
+FitDeğişimHocan, Instagram’da fitness ve sağlıklı yaşam içerikleri üreten bir marka olup web sitesinde temel amaç “bilgilendirici ve ücretsiz içerik sunmak”tır.
+
+Bu site eğitim satışı, üyelik sistemi, ödeme altyapısı içermeyecek; tamamen bilgi odaklı, temiz ve profesyonel bir yapı olacaktır.
+
+#️⃣ 2. Core Goals
+
+Bilgi odaklı, sade ve modern bir fitness sitesi oluşturmak
+
+Beslenme ve supplement gibi bilgileri kategori halinde sunmak
+
+Kullanıcıların fitness ile ilgili temel bilgilere düzenli ve tutarlı biçimde ulaşabilmesi
+
+E-Kitap tanıtımı için profesyonel bir landing page oluşturmak
+
+Instagram markasını destekleyecek minimal bir dijital vitrin sağlamak
+
+#️⃣ 3. Pages & Information Architecture
+3.1 Home Page (Ana Sayfa)
+Amaç:
+
+Markayı tanıtma, hızlı yönlendirme ve profesyonel bir ilk izlenim.
+
+Bölümler:
+
+Hero Section
+
+Slogan: “Bilimsel, sade ve uygulanabilir fitness rehberliği.”
+
+Minimal görsel / marka fotoğrafı
+
+Hakkımda Mini Özet
+
+Kısaca kim olduğun, ne sunduğun
+
+Sosyal kanıt: Instagram’daki topluluk büyüklüğü
+
+Hızlı Link Kartları
+
+Beslenme Rehberi
+
+E-Kitap
+
+İletişim / İş Birliği
+
+Mini E-Kitap Tanıtım Kutusu
+
+Instagram Grid (son 3–6 gönderi)
+
+Footer Preview Alanı
+
+3.2 Beslenme Rehberi (Ana Page)
+Amaç:
+
+Tüm bilgi içeriklerinin tek bir kategori altında toplanması.
+
+İçerik:
+
+Bilgilendirici kısa giriş metni
+
+3 büyük kategori kartı (hover ile açılan):
+
+Besin Rehberi
+
+Supplement Rehberi
+
+Vitamin & Mineral Rehberi
+
+(Opsiyonel ekstra: “Örnek Öğün Önerileri / Meal Plans”)
+
+Üst tarafta arama alanı (opsiyonel)
+
+3.3 Subpages
+3.3.1 Besin Rehberi
+
+Protein, karbonhidrat, yağ kaynakları
+
+Makro değerler
+
+Örnek öğünler
+
+Pratik beslenme ipuçları
+
+3.3.2 Supplement Rehberi
+
+Temel supplementler (kreatin, whey, omega-3 vb.)
+
+Hangi hedef için hangi supplement gerekli
+
+Kullanım zamanlaması
+
+Gereksiz/etkisiz supplement listesi
+
+3.3.3 Vitamin & Mineral Rehberi
+
+Eksiklik belirtileri
+
+Günlük ihtiyaç miktarları
+
+Sporcular için kritik vitamin ve mineraller
+
+Hangi gıda ile karşılanabileceği
+
+3.3.4 Ekstra Öneri Subpage: Örnek Öğünler (Meal Plans)
+
+Kilo alma, yağ yakma, öğrenci için pratik ve ucuz öğünler, hızlı hazırlanan tarifler.
+
+3.4 E-Kitap Tanıtım Sayfası
+İçerik:
+
+Kitap kapağı önizlemesi
+
+Kitap içeriği maddeler halinde
+
+Kimler için uygun
+
+Birkaç sayfa preview görseli
+
+Sık Sorulan Sorular
+
+Tek bir CTA butonu (indir / satın al)
+
+3.5 Footer
+
+@fitdegisimhocan Instagram linki
+
+Copyright
+
+İletişim maili
+
+Gizlilik politikası
+
+#️⃣ 4. Style & Design Guidelines
+Genel Stil:
+
+Minimal
+
+Beyaz ağırlıklı arka plan
+
+Siyah/gri + tek bir accent color (ör. turuncu)
+
+Temiz tipografi (Inter, Poppins, Montserrat önerilir)
+
+Spacing
+
+Her bölüm arasında bol boşluk
+
+Kartlar shadow + hover efekti ile ayrılmalı
