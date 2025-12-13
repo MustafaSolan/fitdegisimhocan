@@ -4,6 +4,7 @@ import creatineImg from '../../assets/creatine.png';
 import preworkoutImg from '../../assets/preworkout.png';
 import bcaaImg from '../../assets/bcaa.png';
 import './NutritionGuide.css';
+import './NutritionDetails.css';
 
 const Supplements = () => {
     return (

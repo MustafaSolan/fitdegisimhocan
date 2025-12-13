@@ -3,6 +3,7 @@ import omegaImg from '../../assets/omega3.png';
 import zmaImg from '../../assets/zma.png';
 import vitaminsImg from '../../assets/vitamins_mix.png';
 import './NutritionGuide.css';
+import './NutritionDetails.css';
 
 const Vitamins = () => {
     return (
