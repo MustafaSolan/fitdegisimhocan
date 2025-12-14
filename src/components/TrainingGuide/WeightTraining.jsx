@@ -1,6 +1,7 @@
 import React from 'react';
 import weightImg from '../../assets/weight_training.png';
 import '../NutritionGuide/NutritionGuide.css';
+import '../NutritionGuide/NutritionDetails.css';
 import './WeightTraining.css';
 
 const FAQSection = () => {
