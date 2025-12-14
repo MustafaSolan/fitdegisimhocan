@@ -1,0 +1,563 @@
+/* WeightTraining.css - Dedicated styles for Weight Training page */
+
+/* FAQ Section - Özelleştirilmiş */
+.wt-faq-section {
+    margin-top: 100px;
+    width: 100%;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.wt-faq-header {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.wt-faq-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.wt-faq-item {
+    background: #fff;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.03);
+    border: 1px solid #eee;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.wt-faq-item:hover {
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+    border-color: #FF9800;
+}
+
+.wt-faq-item.active {
+    border-color: #FF9800;
+    box-shadow: 0 8px 25px rgba(255, 152, 0, 0.1);
+}
+
+.wt-faq-question {
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+}
+
+.wt-q-text {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #1a1a1a;
+}
+
+.wt-toggle-icon {
+    width: 32px;
+    height: 32px;
+    background: #fff3e0;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.wt-faq-item.active .wt-toggle-icon {
+    background: #FF9800;
+    transform: rotate(90deg);
+}
+
+.wt-icon-line {
+    position: absolute;
+    background: #FF9800;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+.wt-faq-item.active .wt-icon-line {
+    background: #fff;
+}
+
+.wt-icon-line.hor {
+    width: 14px;
+    height: 2px;
+}
+
+.wt-icon-line.ver {
+    width: 2px;
+    height: 14px;
+}
+
+.wt-faq-item.active .wt-icon-line.ver {
+    opacity: 0;
+}
+
+.wt-faq-answer {
+    overflow: hidden;
+    transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.wt-answer-content {
+    padding: 0 25px 25px 25px;
+    color: #555;
+    line-height: 1.7;
+    font-size: 1.05rem;
+}
+
+/* Content wrapper */
+.wt-content-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    width: 100%;
+}
+
+.wt-page-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/* Goal Guides Container */
+.wt-goal-guides-container {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    width: 100%;
+}
+
+.wt-guide-card {
+    background: #fff;
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    border: 2px solid #FF9800;
+}
+
+.wt-guide-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 25px;
+    border-bottom: 2px solid #f0f0f0;
+    padding-bottom: 20px;
+}
+
+.wt-guide-icon {
+    font-size: 2.5rem;
+    background: #fff3e0;
+    color: #FF9800;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+}
+
+.wt-guide-header h4 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #333;
+    margin: 0;
+}
+
+.wt-guide-content p {
+    font-size: 1.05rem;
+    color: #555;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.wt-guide-content h5 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #e65100;
+    margin-bottom: 15px;
+}
+
+.wt-action-box {
+    background: #fff8e1;
+    border-left: 4px solid #FF9800;
+    padding: 25px;
+    border-radius: 0 12px 12px 0;
+    margin-top: 25px;
+}
+
+.wt-action-box h5 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #e65100;
+    margin-bottom: 15px;
+}
+
+.wt-action-box ul {
+    padding-left: 20px;
+    margin: 0;
+}
+
+.wt-action-box li {
+    margin-bottom: 12px;
+    color: #444;
+    line-height: 1.6;
+}
+
+.wt-step-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.wt-step-item {
+    display: flex;
+    gap: 15px;
+    align-items: flex-start;
+}
+
+.wt-step-num {
+    background: #FF9800;
+    color: white;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 0.8rem;
+    flex-shrink: 0;
+    margin-top: 3px;
+}
+
+/* Calculator Section */
+.wt-calculator-section {
+    padding: 60px 0;
+    width: 100%;
+    background: transparent;
+}
+
+.wt-calc-header-section {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.wt-section-title {
+    font-size: 1.8rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+    color: #333;
+    margin: 0;
+}
+
+.wt-title-underline {
+    width: 60px;
+    height: 4px;
+    background: linear-gradient(90deg, #2196F3, #21CBF3);
+    margin: 15px auto 0;
+    border-radius: 2px;
+}
+
+.wt-calc-group-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.wt-calc-card {
+    flex: 1;
+    min-width: 400px;
+    background: #ffffff;
+    border-radius: 24px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.06);
+    padding: 40px;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(0, 0, 0, 0.02);
+}
+
+.wt-calc-card.left-card {
+    flex: 1.2;
+}
+
+/* Progress Styling */
+.wt-calc-progress-box {
+    margin-bottom: 30px;
+}
+
+.wt-calc-progress-labels {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.85rem;
+    color: #888;
+    font-weight: 600;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.wt-calc-progress-bg {
+    height: 6px;
+    background: #f0f0f0;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.wt-calc-progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #2196F3, #21CBF3);
+    border-radius: 3px;
+    transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Question Styling */
+.wt-q-text-calc {
+    font-size: 1.2rem;
+    color: #1a1a1a;
+    margin-bottom: 25px;
+    line-height: 1.5;
+    font-weight: 700;
+}
+
+.wt-calc-options-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.wt-calc-option-btn {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 16px 20px;
+    border: 2px solid #f4f4f4;
+    border-radius: 14px;
+    background: #fff;
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    text-align: left;
+    position: relative;
+}
+
+.wt-calc-option-btn:hover {
+    border-color: #b3e5fc;
+    background-color: #f8fbff;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.03);
+}
+
+.wt-calc-option-btn.selected {
+    border-color: #2196F3;
+    background-color: #e3f2fd;
+    color: #1565C0;
+}
+
+.wt-opt-indicator {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #ddd;
+    border-radius: 50%;
+    margin-right: 15px;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.wt-calc-option-btn.selected .wt-opt-indicator {
+    border-color: #2196F3;
+    background: #2196F3;
+}
+
+.wt-calc-option-btn.selected .wt-opt-indicator::after {
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background: white;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.wt-opt-text {
+    font-size: 1rem;
+    font-weight: 500;
+    color: inherit;
+}
+
+/* Completion State */
+.wt-calc-completed-state {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+}
+
+.wt-completed-icon-circle {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #4CAF50, #8BC34A);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 10px 30px rgba(76, 175, 80, 0.3);
+}
+
+.wt-checkmark {
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.wt-calc-completed-state h4 {
+    font-size: 1.5rem;
+    color: #333;
+    margin: 0;
+}
+
+.wt-calc-completed-state p {
+    color: #888;
+    font-size: 1rem;
+    margin: 0;
+}
+
+.wt-calc-reset-btn {
+    margin-top: 10px;
+    padding: 12px 25px;
+    background: #f5f5f5;
+    color: #555;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.2s;
+}
+
+.wt-calc-reset-btn:hover {
+    background: #e0e0e0;
+}
+
+/* Results Display */
+.wt-result-premium-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 15px;
+}
+
+.wt-result-badge {
+    background: linear-gradient(90deg, #2196F3, #21CBF3);
+    color: white;
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.wt-result-title {
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: #1a1a1a;
+    margin: 0;
+}
+
+.wt-result-desc {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+    max-width: 300px;
+    margin: 0;
+}
+
+.wt-result-decoration {
+    width: 50px;
+    height: 3px;
+    background: linear-gradient(90deg, #2196F3, #21CBF3);
+    border-radius: 2px;
+    margin: 5px 0;
+}
+
+.wt-action-scroll-btn {
+    margin-top: 10px;
+    padding: 14px 30px;
+    background: linear-gradient(90deg, #FF9800, #FFC107);
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-weight: 700;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.3s;
+    box-shadow: 0 5px 15px rgba(255, 152, 0, 0.3);
+}
+
+.wt-action-scroll-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(255, 152, 0, 0.4);
+}
+
+/* Result Placeholder */
+.wt-result-placeholder {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #aaa;
+}
+
+.wt-p-icon {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    opacity: 0.5;
+}
+
+.wt-result-placeholder p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .wt-calc-group-container {
+        flex-direction: column;
+        padding: 0 20px;
+    }
+
+    .wt-calc-card {
+        min-width: auto;
+        width: 100%;
+    }
+
+    .wt-guide-card {
+        padding: 25px;
+    }
+
+    .wt-guide-header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .wt-guide-header h4 {
+        font-size: 1.3rem;
+    }
+}
