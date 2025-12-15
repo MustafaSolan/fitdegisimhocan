@@ -538,18 +538,40 @@
 
 /* Responsive */
 @media (max-width: 900px) {
+    .wt-page-container {
+        width: 100%;
+        padding: 0;
+    }
+
+    .wt-content-wrapper {
+        width: 100%;
+        max-width: 100%;
+        padding: 20px 15px;
+        box-sizing: border-box;
+        margin: 0 auto;
+    }
+
     .wt-calc-group-container {
         flex-direction: column;
-        padding: 0 20px;
+        padding: 0;
+        width: 100%;
+        box-sizing: border-box;
     }
 
     .wt-calc-card {
         min-width: auto;
         width: 100%;
+        padding: 25px;
+        box-sizing: border-box;
+    }
+
+    .wt-calculator-section {
+        padding: 40px 0;
     }
 
     .wt-guide-card {
-        padding: 25px;
+        padding: 20px;
+        box-sizing: border-box;
     }
 
     .wt-guide-header {
@@ -559,5 +581,27 @@
 
     .wt-guide-header h4 {
         font-size: 1.3rem;
+    }
+
+    .wt-goal-guides-container {
+        margin-top: 50px;
+        gap: 30px;
+    }
+
+    .wt-faq-section {
+        margin-top: 60px;
+        padding: 0;
+    }
+
+    .wt-section-title {
+        font-size: 1.5rem;
+    }
+
+    .wt-calc-header-section {
+        margin-bottom: 30px;
+    }
+
+    .wt-action-box {
+        padding: 15px;
     }
 }
