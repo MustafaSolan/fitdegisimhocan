@@ -10,12 +10,13 @@ const NutritionGuide = () => {
             <div className="container">
                 <div className="section-header center-text">
                     <h1 style={{
-                        fontSize: '3rem',
+                        fontSize: 'clamp(1.8rem, 6vw, 3rem)',
                         background: 'linear-gradient(to right, #ff6600, #ff9933)',
                         WebkitBackgroundClip: 'text',
                         WebkitTextFillColor: 'transparent',
                         marginBottom: '20px',
-                        fontWeight: '800'
+                        fontWeight: '800',
+                        wordBreak: 'break-word'
                     }}>Nasıl Beslenmeliyiz?</h1>
                     <h2 className="section-title">Besin Rehberi</h2>
                     <p className="section-subtitle">

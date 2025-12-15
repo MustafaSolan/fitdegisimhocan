@@ -226,4 +226,10 @@
     .cardio-hiit-section {
         padding: 25px;
     }
+
+    .cardio-page-container {
+        padding-top: 80px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
 }
