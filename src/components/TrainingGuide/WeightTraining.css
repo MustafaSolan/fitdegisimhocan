@@ -546,7 +546,7 @@
     .wt-content-wrapper {
         width: 100%;
         max-width: 100%;
-        padding: 20px 15px;
+        padding: 20px 8px;
         box-sizing: border-box;
         margin: 0 auto;
     }
@@ -561,8 +561,9 @@
     .wt-calc-card {
         min-width: auto;
         width: 100%;
-        padding: 25px;
+        padding: 15px;
         box-sizing: border-box;
+        min-height: auto;
     }
 
     .wt-calculator-section {
