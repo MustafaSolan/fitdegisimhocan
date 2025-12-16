@@ -48,6 +48,9 @@ const Supplements = () => {
                             <p className="detail-text">
                                 Günlük 3–5 gram almak çoğu kişi için yeterlidir. Kas hücrelerinde su tutarak hacim ve güç artışı sağlar. Bu su tutumu geçicidir ve performansı artıran mekanizmanın bir parçasıdır.
                             </p>
+                            <p className="detail-text">
+                                Araştırmalar, kreatinin sadece kas performansını değil, aynı zamanda beyin ve karaciğer sağlığını da olumlu etkilediğini kanıtlamıştır. En yaygın ve en etkili form olarak <strong>kreatin monohidrat</strong> tercih edilebilir.
+                            </p>
                         </div>
                     </div>
 
@@ -64,6 +67,31 @@ const Supplements = () => {
                             <p className="detail-text">
                                 Düzenli kullanımda vücut adapte olacağı için ara vererek kullanmak mantıklıdır. Etkisi, kafein direnci gibi etkenlerden dolayı kişiden kişiye değişebilir.
                             </p>
+
+                            <div className="detail-subsection" style={{ marginTop: '20px', padding: '15px', backgroundColor: '#f8f9fa', borderRadius: '8px', borderLeft: '4px solid #4CAF50' }}>
+                                <h4 style={{ margin: '0 0 12px 0', color: '#333', fontSize: '1rem' }}>📌 İçerdiği Temel Maddeler</h4>
+
+                                <div style={{ marginBottom: '15px' }}>
+                                    <strong style={{ color: '#2196F3' }}>Beta Alanin</strong>
+                                    <p className="detail-text" style={{ margin: '5px 0' }}>
+                                        Beta alanin, kaslarda asitlenmeyi geciktirerek yanma hissinin daha geç gelmesini sağlar. Özellikle yüksek tekrar ve interval antrenmanlarında performansı uzatır. Karıncalanma hissi yaratabilir, bu gayet normaldir.
+                                    </p>
+                                </div>
+
+                                <div style={{ marginBottom: '15px' }}>
+                                    <strong style={{ color: '#9C27B0' }}>Sitrülin</strong>
+                                    <p className="detail-text" style={{ margin: '5px 0' }}>
+                                        Sitrülin, vücut dokularına kan akışını artırarak performans ve pump hissini destekler. Böbreklerde arjinine dönüşür ve plazmadaki arjinin seviyesini daha uzun süre yüksek tutar. Bu sayede nitrik oksit üretimi ve amonyak döngüsü daha dengeli çalışır.
+                                    </p>
+                                </div>
+
+                                <div>
+                                    <strong style={{ color: '#FF5722' }}>Kafein</strong>
+                                    <p className="detail-text" style={{ margin: '5px 0' }}>
+                                        Kafein, odaklanmayı artırır ve yorgunluk hissini baskılar. Güç ve performansı kısa sürede yukarı çeker. Geç saatlerde alınması durumunda uyku kalitesini olumsuz etkileyebilir, doz önemlidir.
+                                    </p>
+                                </div>
+                            </div>
                         </div>
                     </div>
 

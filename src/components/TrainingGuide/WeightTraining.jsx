@@ -258,6 +258,15 @@ const GoalCalculator = () => {
                 { id: 'B', text: "B) Hatlar düz ve simetrik" },
                 { id: 'C', text: "C) Bel kıvrımı belirgin" }
             ]
+        },
+        {
+            id: 4,
+            question: "Normal beslenme düzeninle kilo durumun nasıl değişir?",
+            options: [
+                { id: 'A', text: "A) Çok kolay kilo alırım, yediklerim hemen kiloya yansır" },
+                { id: 'B', text: "B) Kilom genellikle sabit kalır" },
+                { id: 'C', text: "C) Ne kadar yesem de kilo almakta zorlanırım" }
+            ]
         }
     ];
 
@@ -273,38 +282,63 @@ const GoalCalculator = () => {
     };
 
     const calculateResult = (finalAnswers) => {
-        let counts = { A: 0, B: 0, C: 0 };
-        Object.values(finalAnswers).forEach(ans => counts[ans] = (counts[ans] || 0) + 1);
+        // Her soru için cevap-hedef eşlemesi
+        // Soru 0: A=loss, B=bulk, C=recomp
+        // Soru 1: A=loss, B=recomp, C=bulk
+        // Soru 2: A=loss, B=bulk, C=recomp
+        // Soru 3 (Metabolizma): A=loss, B=recomp, C=bulk
+
+        const answerMappings = {
+            0: { A: 'loss', B: 'bulk', C: 'recomp' },
+            1: { A: 'loss', B: 'recomp', C: 'bulk' },
+            2: { A: 'loss', B: 'bulk', C: 'recomp' },
+            3: { A: 'loss', B: 'recomp', C: 'bulk' }
+        };
+
+        let goalCounts = { loss: 0, bulk: 0, recomp: 0 };
+
+        Object.entries(finalAnswers).forEach(([questionIndex, answer]) => {
+            const mapping = answerMappings[questionIndex];
+            if (mapping && mapping[answer]) {
+                goalCounts[mapping[answer]]++;
+            }
+        });
 
         let title = "";
         let desc = "";
         let targetId = "";
 
-        if (counts.A >= 2) {
+        // 4 soru için en az 2 eşleşme gerekli
+        if (goalCounts.loss >= 2) {
             title = "Kilo Vermeye Odaklan";
             desc = "Yağ oranını düşürmek için kalori açığı oluşturmalı ve kardiyoyu artırmalısın.";
             targetId = "loss-guide";
-        } else if (counts.B >= 2) {
+        } else if (goalCounts.bulk >= 2) {
             title = "Kilo Alarak Kas Kazan (Bulk)";
             desc = "Kas kütlesini artırmak için kontrollü kalori fazlası ve ağır güç antrenmanı yapmalısın.";
             targetId = "bulk-guide";
-        } else if (counts.C >= 2) {
+        } else if (goalCounts.recomp >= 2) {
             title = "Vücut Rekompozisyonu";
             desc = "Mevcut kilonu koruyarak yağ yakıp kas yapmaya (sıkılaşmaya) odaklanmalısın.";
             targetId = "recomp-guide";
         } else {
-            if (counts.A === 1 && counts.B === 1 && counts.C === 1) {
+            // Eşitlik durumunda öncelik sırası
+            if (goalCounts.loss === goalCounts.bulk && goalCounts.bulk === goalCounts.recomp) {
                 title = "Vücut Rekompozisyonu";
                 desc = "Dengeli beslenip antrenman şiddetini artırarak vücudunu şekillendirmelisin.";
                 targetId = "recomp-guide";
-            } else if (counts.A > 0) {
+            } else if (goalCounts.loss >= goalCounts.bulk && goalCounts.loss >= goalCounts.recomp) {
                 title = "Kilo Vermeye Odaklan";
                 desc = "Önce fazlalıklarından kurtulup daha temiz bir temel üzerine inşa etmelisin.";
                 targetId = "loss-guide";
-            } else {
+            } else if (goalCounts.bulk >= goalCounts.recomp) {
                 title = "Kilo Alarak Kas Kazan (Bulk)";
                 desc = "Kas inşası için yakıta ihtiyacın var, korkmadan yemelisin.";
                 targetId = "bulk-guide";
+            } else {
+                title = "Vücut Rekompozisyonu";
+                desc = "Mevcut kilonu koruyarak yağ yakıp kas yapmaya odaklanmalısın.";
+                targetId = "recomp-guide";
             }
         }
 
